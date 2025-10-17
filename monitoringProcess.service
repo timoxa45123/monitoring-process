@@ -1,0 +1,12 @@
+[Unit]
+Description=Monitoring Process Service
+After=network.target 
+
+[Service]
+Type=simple
+ExecStart=/usr/lib/bin/script.sh
+Restart=on-failure 
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target 
