@@ -4,9 +4,7 @@ After=network.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/lib/bin/script.sh
-Restart=on-failure 
-RestartSec=5
+ExecStart=/usr/lib/bin/monitoringProcess.sh
 
 [Install]
 WantedBy=multi-user.target 
